@@ -1,0 +1,72 @@
+
+
+.content {
+    padding-top: 55px;
+    z-index: 4;
+    position: absolute;
+    width: 100%;
+    height: 100%;    
+    overflow: hidden;
+}
+
+#about {
+    bottom: -300px;
+    left: 0px;
+    transition: all 2s ease-in-out;
+    
+    font-family: 'Calligraffitti', cursive;
+
+    position: absolute;
+
+    
+
+    width: 400px;
+    height: 300px;
+
+    img {
+        width: 400px;
+        position: absolute;
+    }
+
+    #text {
+        // color: black;
+        // margin-top: 28px;
+        // font-weight: 600;
+        // font-size: 40px;
+        // z-index: 2;
+    }
+}
+
+
+@keyframes horizontal {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0px);
+
+    }
+}
+
+@keyframes  vertical {
+    0% {
+        transform: translateY(0px);
+    }
+
+    33% {
+        transform: translateY(-15px);
+    }
+
+    66% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}

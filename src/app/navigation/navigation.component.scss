@@ -1,0 +1,43 @@
+
+
+.main {
+    font-family: 'Lobster', cursive;
+    height: 100%;
+    width: 100px;
+    display: block;
+    
+}
+
+ul {
+    color: black;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 25px;
+    list-style-type: none;
+
+    li {
+        background-image: url('../../assets/button-rust.png');
+        cursor: pointer;
+    }
+
+}
+
+.content {
+    position: relative;
+    margin-top: 55px;
+    width: 100px;
+    height: 100%;
+    background-image: url('../../assets/panel-main.png');
+}
+.links {
+    padding-top: 50px;
+    
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+ul .active {
+    color: white;
+    background-image: url('../../assets/button-pressed0.png');
+}

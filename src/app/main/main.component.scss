@@ -1,0 +1,50 @@
+
+.nav-space {
+    height: 50px;
+    width: 100%;
+}
+
+.main {
+    justify-content: center;
+    z-index: 1;
+    background-image: url('../../assets/e4862e05eebc6b19e744e32a5b5ff5966de37d7d.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    
+    position: relative;
+    font-family: 'Lobster', cursive;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.greetings {
+    text-align: center;
+    font-size: 40px;
+}
+
+img {
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

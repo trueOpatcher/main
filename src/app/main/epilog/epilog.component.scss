@@ -1,0 +1,126 @@
+
+
+.content {
+    top: 0;
+    left: 0;
+    padding-top: 55px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.image {
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    right: 0;
+    position: relative;
+    width: 563px;
+    height: 797px;
+    font-family: 'Calligraffitti', cursive;
+    font-weight: 600;
+    
+}
+
+#background {
+    overflow: hidden;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 1.5s;
+
+}
+
+#contact-me {
+    opacity: 0;
+    position: absolute;
+    left: 100px;
+    top: 430px;
+    z-index: 3;
+    font-size:30px;
+    transition: opacity 1.5s;
+}
+
+#my-links {
+    z-index: 3;
+    opacity: 0;
+    font-family: none;
+    left: 20px;
+    top: 475px;
+    position: absolute;
+    list-style: none;
+    transition: opacity 1.5s;
+
+    li {
+        display: flex;
+        align-items: center;
+        
+        img {
+            width: 20px;
+            height: 20px;
+        }
+
+        div {
+            padding-left: 5px;
+        }
+    }
+}
+
+#train {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 3;
+    transform: translateX(420px);
+    transition: transform 1.5s 1s ease-out;
+}
+
+
+#rails {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 2s 0.5s;
+}
+
+
+#baloon {
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all 2s 0.5s;
+    position: absolute;
+    z-index: 3;
+    top: 230px;
+    left: 50px;
+}
+
+#parachute {
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: all 2s 0.5s;
+    position: absolute;
+    z-index: 3;
+    top: 250px;
+    left: 210px;
+}
+
+// #image:hover #background {
+//     opacity: 1;
+// }
+
+// #image:hover #train {
+//     transform: translateX(0px);
+// }
+
+// #image:hover #rails {
+//     opacity: 1;
+// }
+
+// #image:hover #parachute, #image:hover #baloon {
+//     transform: translateY(0px);
+//     opacity: 1;
+// }
+

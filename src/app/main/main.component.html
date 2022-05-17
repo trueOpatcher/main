@@ -1,0 +1,12 @@
+<div class="main" (scroll)="onScroll($event)">
+
+
+
+       <app-about *ngIf="showAbout.state === 'on' || showAbout.state === 'ending'" #about></app-about>
+
+       <app-skills *ngIf="showSkills.state === 'on' || showSkills.state === 'ending'" #skills></app-skills>
+
+       <app-projects *ngIf="showProjects.state === 'on' || showProjects.state === 'ending'" #projects></app-projects>
+
+       <app-epilog *ngIf="showEpilog.state === 'on' || showEpilog.state === 'ending'" #epilog></app-epilog>
+</div>

@@ -1,0 +1,118 @@
+
+
+.nav-bar {
+    position: relative;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background-image: url('../../assets/texture-rust-0.png');
+   
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
+}
+
+
+#first-gear {
+    z-index: 5;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    left: -27px;
+    top: 23px;
+
+    transform: rotate(0deg);
+    transition: rotate 0.2s;
+
+}
+
+#second-gear {
+    position: absolute;
+    z-index: 4;
+    top: 30px;
+    left: 43px;
+    width: 50px;
+    height: 50px;
+
+    transform: rotate(0deg);
+    transition: rotate 0.2s;
+}
+
+#third-gear {
+    position: absolute;
+    z-index: 3;
+    top: 10px;
+    left: 82px;
+    width: 35px;
+    height: 35px;
+
+    transform: rotate(0deg);
+    transition: rotate 0.2s;
+
+}
+
+#clock {
+    z-index: 10;
+    // margin-left: auto;
+    // margin-bottom: auto;
+    position: fixed;
+    top: 0;
+    left: 640px;
+    width: 60px;
+    height: 60px;
+}
+
+#indicator {
+    position: absolute;
+
+    z-index: 11;
+    top: 0px;
+    right: 0px;
+    width: 60px;
+    height: 60px;
+
+}
+
+
+
+#big-arrow {
+    transform: rotate(0);
+    transform-origin: bottom;
+    z-index: 12;
+
+    position: absolute;
+    width: 7px;
+    height: 15px;
+
+    top: 14px;
+    right: 26px;
+    
+
+}
+
+#long-arrow {
+    transform: rotate(0);
+    transform-origin: bottom;
+    z-index: 13;
+
+    position: absolute;
+    width: 8px;
+    height: 20px;
+
+    top: 10px;
+    right: 26px;
+
+}
+
+#sec-arrow {
+    transform: rotate(0);
+    transform-origin: bottom;
+    z-index: 14;
+
+    position: absolute;
+    width: 8px;
+    height: 23px;
+    top: 7px;
+    right: 26px;
+}
+
