@@ -41,6 +41,7 @@ export class MainComponent implements OnInit, AfterViewInit {
   
   ngOnInit(): void {
 
+
     this.router.events.forEach((event) => {
       if(event instanceof NavigationStart) {
         const url = event.url;
