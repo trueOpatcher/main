@@ -20,8 +20,8 @@ export class AboutComponent implements OnInit, AfterViewInit {
   startAnimation() {
     setTimeout(() => {
       document.getElementById('about')!.style.opacity = '1';
-      document.getElementById('about')!.style.left = '300px';
-      document.getElementById('about')!.style.bottom = '200px';
+      document.getElementById('about')!.style.left = '25%';
+      document.getElementById('about')!.style.bottom = '25%';
 
     }, 100);
     this.flyingAnimation();
@@ -29,7 +29,7 @@ export class AboutComponent implements OnInit, AfterViewInit {
 
   endAnimation() {
     return new Promise((resolve) => {
-      document.getElementById('about')!.style.bottom = '300px';
+      document.getElementById('about')!.style.bottom = '50%';
       document.getElementById('about')!.style.left = 'calc(100% + 300px)';
 
       setTimeout(() => {
