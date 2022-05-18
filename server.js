@@ -2,6 +2,17 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
+
+app.enable('trust proxy');
+
+app.use('*', function(req, res, next) {
+    if(req.secure) {
+      next();
+    } else {
+        return res.redirect( 301, "https://" + req.headers.host + req.url);
+    }
+})
+
 app.use(express.static(path.join(__dirname + '/dist/main-client')));
 app.get('*', (req, res) => {
 
